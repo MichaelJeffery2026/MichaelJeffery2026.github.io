@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to bottom, #000000, #1a383b);
+    min-height: 100vh;
+    width: 100%;
+}
+
+.navbar {
+    color:white;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: clamp(0.75rem, 6vw, 3rem);
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul a {
+    font-size: clamp(0.2rem, 4vw, 1.5rem);
+    text-decoration: none;
+    color: inherit;
+}
+
+.content {
+    padding-top: 100px;
+    margin-left: 10%;
+    width: 80%;
+    justify-content: center;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.content .section {
+    background-color: grey;
+    border-radius: 5px;
+    flex: 1 1 45%;
+    max-width: 40%;
+    min-width: 300px;
+    outline: none;
+    padding: 10px;
+}
+
+.content .section h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.content .section h4 {
+    padding-left: 20px;
+}
+
+.content ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 20px;
+    gap: 20px;
+}
+
+.content ul li {
+    display: inline;
+}
+
+.content ul li img {
+    width: 50px;
+}
+
+.content .section p {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.content .section .skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content .section .skills li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .content .section {
+        flex: 1 1 100%;  /* Makes sections take full width on smaller screens */
+        max-width: 100%;
+    }
+}
